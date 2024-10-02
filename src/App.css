@@ -1,0 +1,11 @@
+#top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 8px;
+
+  & img {
+    max-width: 125px;
+    height: auto;
+  }
+}

@@ -1,0 +1,31 @@
+#selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+#selector-buttons{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+
+    & button, & label {
+        cursor: pointer;
+        transition: all .3s ease;
+        background:  #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        padding: 4;
+
+        &:hover {
+            background: #444;
+            scale: 1.1;
+        }
+    }
+}

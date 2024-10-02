@@ -1,0 +1,36 @@
+.tier {
+  border: 1px solid #444;
+  display: flex;
+  flex-direction: column;
+  background: #1f1f1f;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #111;
+  transition: all .3s ease;
+
+  &.drag-over {
+    scale: 1.01;
+    background: #555;
+  }
+}
+
+.label {
+  cursor: pointer;
+  background: var(--level);
+  color: #333;
+  font-weight: bold;
+  min-width: 50px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+
+  & span {
+    max-width: 100px;
+    padding: 0.5rem;
+  }
+}
